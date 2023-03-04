@@ -3,6 +3,11 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
 
+  get '/' do
+    task = Task.all
+    task.to_json
+  end
+  
 
 
 end
