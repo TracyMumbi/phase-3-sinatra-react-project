@@ -11,6 +11,9 @@ class ApplicationController < Sinatra::Base
     user = User.all
     user.to_json
   end
+  get "/user/tasks/:id" do
+
+  end
   
 
 end
