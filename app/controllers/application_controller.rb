@@ -21,7 +21,9 @@ class ApplicationController < Sinatra::Base
     # puts params[:date]
     task.to_json
   end
-  
+  get "/tasks/:id" do
 
+  end
+  
 
 end
