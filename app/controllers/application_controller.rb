@@ -25,6 +25,11 @@ class ApplicationController < Sinatra::Base
     task = Task.find(params[:id])
     task.to_json
   end
+  get "/user/:id/tasks/:completion_status" do
+    task = User.find(params[:id])
+    task.to_json
+  end
+
   
 
 end
