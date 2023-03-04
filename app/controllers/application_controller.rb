@@ -12,7 +12,8 @@ class ApplicationController < Sinatra::Base
     user.to_json
   end
   get "/user/tasks/:id" do
-
+    task = User.find(params[:id]).tasks
+    task.to_json
   end
   
 
