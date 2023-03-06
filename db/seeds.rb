@@ -21,7 +21,7 @@ puts "🌱 Seeding spices..."
           user_id: rand(1..10),
           name: Faker::Name.name,
           description: Faker::Lorem.sentence,
-          date: Faker::Date.between(from: '2023-03-03', to: '2023-03-05'),     
+          date: Faker::Date.between(from: '2023-03-05', to: '2023-03-07'),     
           due_date: Faker::Date.between(from: '2023-01-01', to: '2023-03-31'),
           completion_status: ['In progress', 'Completed', 'On hold'].sample,
         )
