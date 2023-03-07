@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-
+ruby File.read(".ruby-version").strip
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
@@ -12,6 +12,7 @@ gem "sinatra", "~> 2.1"
 # https://github.com/rack/rack-contrib
 gem "rack-contrib"
 
+
 # More Rack middleware! Used to handle CORS requests
 # https://github.com/cyu/rack-cors
 gem "rack-cors"
@@ -23,7 +24,6 @@ gem "activerecord"
 # Configures common Rake tasks for working with Active Record
 # https://github.com/sinatra-activerecord/sinatra-activerecord
 gem "sinatra-activerecord"
-
 
 
 # Run common tasks from the command line
